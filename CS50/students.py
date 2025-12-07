@@ -5,8 +5,7 @@ students = []
 with open("students.csv") as file:
     # Para las lineas en file
     for line in file:
-        # A las variables name, house se le da control con rstrip
-        # y estás se dividen por renglones en cada , 
+        # Esta linea almacenamos primer valor antes de la "," en su variable (nombre)
         name, house = line.rstrip().split(",")
         student = {"name":name, "house":house}
         students.append(student)
